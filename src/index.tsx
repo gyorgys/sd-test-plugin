@@ -42,7 +42,7 @@ const Content: VFC<{ serverAPI: ServerAPI }> = ({}) => {
       <PanelSectionRow>
         <ButtonItem
           layout="below"
-          onClick={(e) =>
+          onClick={(e: { currentTarget: any; }) =>
             showContextMenu(
               <Menu label="Menu" cancelText="CAAAANCEL" onCancel={() => {}}>
                 <MenuItem onSelected={() => {}}>Item #1</MenuItem>
